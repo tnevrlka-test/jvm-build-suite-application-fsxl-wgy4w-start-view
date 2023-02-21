@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-vmks
+  namespace: jvm-build-lfhh-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:5b6b677aba6184ed87f150ece363ae850c4603f2b20867baa11dde57a34c42ed
+        name: container-image
+        resources: {}
+status: {}
